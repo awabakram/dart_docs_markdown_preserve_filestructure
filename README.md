@@ -89,12 +89,9 @@ To maximize the quality of the generated documentation, follow these best practi
 
 ## Installation
 
-Install the tool by adding it to your Dart project or using the global executable:
+Install the tool by activating the global executable:
 
 ```bash
-# Add to your Dart project
-dart pub add dart_docs_markdown
-
 # Install globally
 dart pub global activate dart_docs_markdown
 ```
