@@ -1,7 +1,8 @@
 name: dart_doc_markdown
 description: A sample command-line application.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+homepage: https://github.com/Toglefritz/dart_docs_markdown
+repository: https://github.com/Toglefritz/dart_docs_markdown
 
 environment:
   sdk: ^3.6.1
