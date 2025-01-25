@@ -1,5 +1,5 @@
 name: dart_doc_markdown
-description: A sample command-line application.
+description: A tool for creating Markdown documentation from Dart files in a Dart/Flutter project.
 version: 1.0.0
 homepage: https://github.com/Toglefritz/dart_docs_markdown
 repository: https://github.com/Toglefritz/dart_docs_markdown
