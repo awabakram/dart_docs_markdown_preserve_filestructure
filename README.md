@@ -108,6 +108,42 @@ You can configure the tool using a `.dartdocmarkdownrc` file (optional) to speci
 - Formatting preferences
 - Custom output paths
 
+## Project Structure
+
+The project structure is organized as follows:
+
+```text
+dart_to_docusaurus/
+├── bin/
+│   ├── dart_to_markdown.dart   # Entry point for the CLI tool
+├── lib/
+│   ├── dart_to_markdown.dart   # Main library file, exporting core functionality
+│   ├── src/
+│   │   ├── directory_traversal.dart   # Handles project directory traversal
+│   │   ├── dart_parser.dart           # Parses Dart files using analyzer
+│   │   ├── markdown_generator.dart    # Generates Markdown from parsed data
+│   │   ├── file_writer.dart           # Writes Markdown files to the output directory
+│   │   ├── config_manager.dart        # Manages configuration options (e.g., ignores, custom settings)
+├── test/
+│   ├── directory_traversal_test.dart   # Unit tests for directory traversal
+│   ├── dart_parser_test.dart           # Unit tests for Dart file parsing
+│   ├── markdown_generator_test.dart    # Unit tests for Markdown generation
+│   ├── file_writer_test.dart           # Unit tests for file writing
+│   ├── integration_test.dart           # Integration tests for end-to-end functionality
+├── tool/
+│   ├── scripts/
+│   │   ├── update_sidebar.js           # Optional: Automates updates to Docusaurus `sidebars.js`
+├── example/
+│   ├── example_project/                # Example Dart project for testing and showcasing the tool
+│   │   ├── lib/
+│   │   │   ├── example.dart
+├── pubspec.yaml                        # Dart project configuration and dependencies
+├── analysis_options.yaml               # Dart analysis and linting rules
+├── CHANGELOG.md                        # Changelog for the CLI tool
+├── LICENSE                             # License for the project
+└── README.md  
+```
+
 ## Contributing
 
 Contributions are welcome! If you'd like to report issues or suggest features, feel free to open an
