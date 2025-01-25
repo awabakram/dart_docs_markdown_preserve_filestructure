@@ -6,9 +6,9 @@ version: 1.0.0
 environment:
   sdk: ^3.6.1
 
-# Add regular dependencies here.
 dependencies:
-  # path: ^1.8.0
+  # Provides lint rules for the Dart analyzer.
+  very_good_analysis: ^7.0.0
 
 dev_dependencies:
   lints: ^5.0.0

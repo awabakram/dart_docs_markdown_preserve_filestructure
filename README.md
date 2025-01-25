@@ -115,9 +115,9 @@ The project structure is organized as follows:
 ```text
 dart_to_docusaurus/
 ├── bin/
-│   ├── dart_to_markdown.dart   # Entry point for the CLI tool
+│   ├── dart_doc_markdown.dart   # Entry point for the CLI tool
 ├── lib/
-│   ├── dart_to_markdown.dart   # Main library file, exporting core functionality
+│   ├── dart_doc_markdown.dart   # Main library file, exporting core functionality
 │   ├── src/
 │   │   ├── directory_traversal.dart   # Handles project directory traversal
 │   │   ├── dart_parser.dart           # Parses Dart files using analyzer

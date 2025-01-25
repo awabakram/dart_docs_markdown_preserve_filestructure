@@ -19,7 +19,7 @@ class CLIConfig {
   });
 
   /// Factory method to parse and validate arguments.
-  static CLIConfig fromArguments(List<String> arguments) {
+  factory CLIConfig.fromArguments(List<String> arguments) {
     // If the number of arguments is less than 2, throw an error.
     if (arguments.length < 2) {
       throw ArgumentError('Usage: dart_to_docusaurus <project_directory> <output_directory> [--verbose]');

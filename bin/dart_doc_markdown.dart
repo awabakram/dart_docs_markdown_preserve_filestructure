@@ -10,7 +10,7 @@ void main(List<String> arguments) {
     // Delegate to the library with validated config.
     runDocumentationGeneration(config);
   } catch (e) {
-    print('Error: ${e.toString()}');
+    print('Error: $e');
     print('Usage: dart_to_docusaurus <project_directory> <output_directory> [--verbose]');
   }
 }
@@ -20,6 +20,6 @@ CLIConfig _parseArguments(List<String> arguments) {
   try {
     return CLIConfig.fromArguments(arguments);
   } catch (e) {
-    throw Exception('Failed to parse arguments: ${e.toString()}');
+    throw Exception('Failed to parse arguments: $e');
   }
 }
