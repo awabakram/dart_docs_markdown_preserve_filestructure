@@ -17,8 +17,8 @@ The primary use case for **Dart Docs Markdown** is to bridge the gap between tra
 documentation tools and modern documentation systems. By generating Markdown files, this tool
 enables developers to:
 
-- Integrate code documentation into platforms like **[Docusaurus](https://docusaurus.io/)**, *
-  *[GitBook](https://www.gitbook.com/)**, or **[ReadMe](https://readme.com/)**.
+- Integrate code documentation into platforms like **[Docusaurus](https://docusaurus.io/)**,
+  **[GitBook](https://www.gitbook.com/)**, or **[ReadMe](https://readme.com/)**.
 - Maintain code documentation alongside other project documentation.
 - Customize and enhance documentation workflows with Markdown-based systems.
 
@@ -40,7 +40,7 @@ The `dartdoc` package and **Dart Docs Markdown** serve different purposes:
     - **[Docusaurus](https://docusaurus.io/)**
     - **[GitBook](https://www.gitbook.com/)**
     - **[MkDocs](https://www.mkdocs.org/)**
-    - **[ReadMe](https://readme.com/_**
+    - **[ReadMe](https://readme.com/)**
 - **Deployment**: Ideal for teams already using systems that support Markdown to manage
   documentation.
 
