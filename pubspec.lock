@@ -15,7 +15,7 @@ packages:
     source: sdk
     version: "0.3.3"
   analyzer:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: analyzer
       sha256: c9040fc56483c22a5e04a9f6a251313118b1a3c42423770623128fa484115643
