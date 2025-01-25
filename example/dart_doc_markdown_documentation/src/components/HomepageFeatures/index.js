@@ -4,35 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Automated Documentation',
+    Svg: require('@site/static/img/chemistry_experiment.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Generate structured and professional Markdown documentation for your Dart/Flutter project with a single command.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Seamless Integration',
+    Svg: require('@site/static/img/network_cloud_icon.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Easily integrate the generated Markdown files with documentation platforms like Docusaurus for a polished site.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Detailed Class and Method Documentation',
+    Svg: require('@site/static/img/reading.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dive deep into your project’s details with class-specific overviews, method documentation, and constructor details, all generated in Markdown format.
       </>
     ),
-  },
+  }
 ];
 
 function Feature({Svg, title, description}) {

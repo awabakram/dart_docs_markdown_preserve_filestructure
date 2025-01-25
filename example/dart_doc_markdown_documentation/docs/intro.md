@@ -2,46 +2,45 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Dart Docs Markdown
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the documentation for **Dart Docs Markdown**, a powerful CLI tool that automates the generation of Markdown documentation for Dart and Flutter projects. This documentation will guide you through everything you need to know to use the tool effectively and integrate its output into Markdown-based documentation platforms like **Docusaurus**.
+
+## What is Dart Docs Markdown?
+
+Dart Docs Markdown is designed to simplify the process of documenting Dart/Flutter projects. It extracts metadata from your code—classes, methods, constructors, global functions, and more—and generates structured Markdown files that can be used directly in documentation sites or stored as standalone files.
+
+## Why Use Dart Docs Markdown?
+
+With Dart Docs Markdown, you can:
+- Automate the documentation process, reducing manual effort.
+- Generate clean, professional Markdown files ready for use in platforms like **Docusaurus**.
+- Easily integrate with your existing Dart/Flutter development workflow.
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
+To get started, ensure you have the following installed:
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - During installation, select all checkboxes for dependencies.
+- The Dart SDK:
+  - Install the Dart SDK from [dart.dev](https://dart.dev/get-dart).
 
-## Generate a new site
+### Generate Documentation
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+Run the Dart Docs Markdown CLI tool with the following command:
 
 ```bash
-cd my-website
-npm run start
+dart run dart_docs_markdown /path/to/your/project /path/to/output/directory
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+This command:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+1.	Analyzes the specified Dart/Flutter project.
+2.	Generates Markdown files in the output directory.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Learn More
+
+Explore the rest of this documentation to:
+- Discover advanced CLI options.
+- Learn best practices for integrating with documentation platforms.
+- Customize the generated Markdown files to fit your needs.
