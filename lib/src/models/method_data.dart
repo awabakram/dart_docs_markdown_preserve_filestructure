@@ -1,4 +1,4 @@
-import 'package:dart_doc_markdown/src/models/parameter_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/parameter_data.dart';
 
 /// Represents metadata for a method, including its name, documentation, return type, and parameters.
 ///

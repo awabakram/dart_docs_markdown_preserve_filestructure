@@ -1,6 +1,6 @@
-import 'package:dart_doc_markdown/src/models/constructor_data.dart';
-import 'package:dart_doc_markdown/src/models/field_data.dart';
-import 'package:dart_doc_markdown/src/models/method_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/constructor_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/field_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/method_data.dart';
 
 /// Represents the parsed data for a Dart class, including its members, methods, constructors, and dependencies.
 ///

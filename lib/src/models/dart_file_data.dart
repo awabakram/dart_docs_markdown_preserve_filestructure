@@ -1,5 +1,5 @@
-import 'package:dart_doc_markdown/src/models/class_data.dart';
-import 'package:dart_doc_markdown/src/models/function_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/class_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/function_data.dart';
 
 /// Represents the parsed content of a Dart file, including its classes and global functions.
 ///

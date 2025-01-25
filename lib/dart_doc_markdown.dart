@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:dart_doc_markdown/models/cli_config.dart';
-import 'package:dart_doc_markdown/src/dart_parser.dart';
-import 'package:dart_doc_markdown/src/directory_traversal.dart';
-import 'package:dart_doc_markdown/src/markdown_generator.dart';
-import 'package:dart_doc_markdown/src/models/class_data.dart';
-import 'package:dart_doc_markdown/src/models/dart_file_data.dart';
-import 'package:dart_doc_markdown/src/models/method_data.dart';
-import 'package:dart_doc_markdown/src/models/parameter_data.dart';
+import 'package:dart_doc_markdown_generator/models/cli_config.dart';
+import 'package:dart_doc_markdown_generator/src/dart_parser.dart';
+import 'package:dart_doc_markdown_generator/src/directory_traversal.dart';
+import 'package:dart_doc_markdown_generator/src/markdown_generator.dart';
+import 'package:dart_doc_markdown_generator/src/models/class_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/dart_file_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/method_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/parameter_data.dart';
 
 /// Entry point for the CLI application.
 ///

@@ -1,4 +1,4 @@
-import 'package:dart_doc_markdown/src/models/parameter_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/parameter_data.dart';
 
 /// Represents a global function or variable and its associated metadata.
 ///

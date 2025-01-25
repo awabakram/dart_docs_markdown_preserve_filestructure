@@ -4,13 +4,13 @@ import 'package:analyzer/dart/analysis/results.dart';
 import 'package:analyzer/dart/analysis/utilities.dart';
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/ast/token.dart';
-import 'package:dart_doc_markdown/src/models/class_data.dart';
-import 'package:dart_doc_markdown/src/models/constructor_data.dart';
-import 'package:dart_doc_markdown/src/models/dart_file_data.dart';
-import 'package:dart_doc_markdown/src/models/field_data.dart';
-import 'package:dart_doc_markdown/src/models/function_data.dart';
-import 'package:dart_doc_markdown/src/models/method_data.dart';
-import 'package:dart_doc_markdown/src/models/parameter_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/class_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/constructor_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/dart_file_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/field_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/function_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/method_data.dart';
+import 'package:dart_doc_markdown_generator/src/models/parameter_data.dart';
 
 /// Responsible for parsing Dart files to extract documentation-relevant data.
 class DartParser {
