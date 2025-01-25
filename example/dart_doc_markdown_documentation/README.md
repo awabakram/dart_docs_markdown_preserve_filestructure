@@ -35,7 +35,7 @@ You can view this documentation site in two ways:
 
 ### Online
 
-The site is hosted at [placeholder URL](). Visit the URL to explore the documentation online.
+The site is hosted at [https://dart-docs-markdown.web.app/](https://dart-docs-markdown.web.app/). Visit the URL to explore the documentation online.
 
 ### Run Locally
 
