@@ -17,7 +17,8 @@ The primary use case for **Dart Docs Markdown** is to bridge the gap between tra
 documentation tools and modern documentation systems. By generating Markdown files, this tool
 enables developers to:
 
-- Integrate code documentation into platforms like **[Docusaurus](https://docusaurus.io/)**, **[GitBook](https://www.gitbook.com/)**, or **[ReadMe](https://readme.com/)**.
+- Integrate code documentation into platforms like **[Docusaurus](https://docusaurus.io/)**, *
+  *[GitBook](https://www.gitbook.com/)**, or **[ReadMe](https://readme.com/)**.
 - Maintain code documentation alongside other project documentation.
 - Customize and enhance documentation workflows with Markdown-based systems.
 
@@ -152,4 +153,27 @@ issue or submit a pull request on [GitHub](https://github.com/Toglefritz/dart_do
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Disclaimers
+
+In the creation of this Dart CLI tool, artificial intelligence (AI) tools have been utilized. These
+tools have assisted in various stages of the plugin's development, from initial code generation to
+the optimization of algorithms.
+
+It is emphasized that the AI's contributions have been thoroughly overseen. Each segment of
+AI-assisted code has undergone meticulous scrutiny to ensure adherence to high standards of quality,
+reliability, and performance. This scrutiny was conducted by the sole developer responsible for the
+tool's creation.
+
+Rigorous testing has been applied to all AI-suggested outputs, encompassing a wide array of
+conditions and use cases. Modifications have been implemented where necessary, ensuring that the
+AI's contributions are well-suited to the specific requirements and limitations inherent in
+Dart CLI tools and the application to which this one is intended to be applied.
+
+Commitment to the plugin's accuracy and functionality is paramount, and feedback or issue reports
+from users are invited to facilitate continuous improvement.
+
+It is to be understood that this plugin, like all software, is subject to evolution over time. The
+developer is dedicated to its progressive refinement and is actively working to surpass the
+expectations of the Dart community.
 
