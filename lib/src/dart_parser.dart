@@ -7,6 +7,7 @@ import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_doc_markdown/src/models/class_data.dart';
 import 'package:dart_doc_markdown/src/models/constructor_data.dart';
 import 'package:dart_doc_markdown/src/models/dart_file_data.dart';
+import 'package:dart_doc_markdown/src/models/field_data.dart';
 import 'package:dart_doc_markdown/src/models/function_data.dart';
 import 'package:dart_doc_markdown/src/models/method_data.dart';
 import 'package:dart_doc_markdown/src/models/parameter_data.dart';
@@ -63,12 +64,36 @@ class DartParser {
       documentation: documentationComment,
     );
 
-    // Extract methods, constructors, and dependencies.
+    // Extract fields (members), methods, constructors, and dependencies.
     for (final ClassMember member in classDeclaration.members) {
-      if (member is ConstructorDeclaration) {
+      // If the member is a field, extract its name and type.
+      if (member is FieldDeclaration) {
+        for (final VariableDeclaration field in member.fields.variables) {
+          // Get the name of the field
+          final String fieldName = field.name.lexeme;
+
+          // Get the type declaration of the field
+          final String? fieldType = member.fields.type?.toSource();
+
+          // Get the Dartdoc comment for the field
+          final String? fieldDocumentation = member.documentationComment?.tokens.map((Token token) => token.lexeme).join('\n');
+
+          classData.fields.add(
+            FieldData(
+              name: fieldName,
+              type: fieldType,
+              documentation: fieldDocumentation,
+            ),
+          );
+        }
+      }
+      // If the member is a constructor, extract its parameters.
+      else if (member is ConstructorDeclaration) {
         final ConstructorData constructorData = _extractConstructorData(member);
         classData.constructors.add(constructorData);
-      } else if (member is MethodDeclaration) {
+      }
+      // If the member is a method, extract its parameters and return type.
+      else if (member is MethodDeclaration) {
         final MethodData methodData = _extractMethodData(member);
         classData.methods.add(methodData);
       }
@@ -79,12 +104,14 @@ class DartParser {
       classData.dependencies.add(classDeclaration.extendsClause!.superclass.name2.lexeme);
     }
 
+    // Extract dependencies (mixins and interfaces).
     if (classDeclaration.withClause != null) {
       for (final NamedType mixin in classDeclaration.withClause!.mixinTypes) {
         classData.dependencies.add(mixin.name2.lexeme);
       }
     }
 
+    // Extract dependencies (interfaces).
     if (classDeclaration.implementsClause != null) {
       for (final NamedType interface in classDeclaration.implementsClause!.interfaces) {
         classData.dependencies.add(interface.name2.lexeme);
