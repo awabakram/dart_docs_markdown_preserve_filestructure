@@ -1,4 +1,4 @@
-import 'package:dart_doc_markdown/src/class_data.dart';
+import 'package:dart_doc_markdown/src/models/class_data.dart';
 
 /// Data class to represent the parsed content of a Dart file.
 class DartFileData {

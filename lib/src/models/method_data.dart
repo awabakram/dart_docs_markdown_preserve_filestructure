@@ -1,4 +1,4 @@
-import 'package:dart_doc_markdown/src/parameter_data.dart';
+import 'package:dart_doc_markdown/src/models/parameter_data.dart';
 
 /// Data class to represent a method and its parameters.
 class MethodData {
