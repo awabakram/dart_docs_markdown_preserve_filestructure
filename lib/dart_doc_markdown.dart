@@ -17,7 +17,6 @@ import 'package:dart_doc_markdown/src/models/parameter_data.dart';
 /// 	1.	**Traverse**: Scan the project directory for .dart files.
 /// 	2.	**Parse**: Extract documentation-relevant data using Dart’s analyzer.
 /// 	3.	**Generate**: Format the extracted data into Markdown files.
-/// 	4.	**Write**: Save the Markdown files to the specified output directory.
 void runDocumentationGeneration(CLIConfig config) {
   // Step 1: Traverse the directory to get all Dart files.
   final DirectoryTraversal traversal = DirectoryTraversal(
@@ -67,8 +66,6 @@ void runDocumentationGeneration(CLIConfig config) {
       print('Error generating Markdown for file ${fileData.filePath}: $e');
     }
   }
-
-  // TODO(Toglefritz): Step 4 - Write the Markdown files to storage.
 }
 
 /// Prints the list of Dart files found during directory traversal if verbose mode is enabled.
