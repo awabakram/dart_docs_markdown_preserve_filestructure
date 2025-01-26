@@ -93,7 +93,7 @@ Install the tool by activating the global executable:
 
 ```bash
 # Install globally
-dart pub global activate dart_docs_markdown
+dart pub global activate dart_doc_markdown_generator
 ```
 
 ## Usage
@@ -105,7 +105,7 @@ To generate Markdown documentation for your project:
 1. Run the CLI tool with the required arguments:
 
 ```bash
-dart run dart_docs_markdown <project_directory> <output_directory>
+dart run dart_doc_markdown_generator <project_directory> <output_directory>
 ```
 
 - **`<project_directory>`**: The root directory of your Dart/Flutter project.

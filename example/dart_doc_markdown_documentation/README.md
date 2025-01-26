@@ -17,7 +17,7 @@ Markdown files were then used as the content for this Docusaurus site.
    The `dart_doc_markdown` tool was run with the `docs/` directory specified as the output
    directory:
    ```bash
-   dart run ../bin/dart_doc_markdown.dart ../lib ./docs
+   dart run ../bin/dart_doc_markdown_generator.dart ../lib ./docs
    ```
 
 This command:

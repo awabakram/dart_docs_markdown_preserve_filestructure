@@ -1,4 +1,4 @@
-import 'package:dart_doc_markdown_generator/dart_doc_markdown.dart';
+import 'package:dart_doc_markdown_generator/dart_doc_markdown_generator.dart';
 import 'package:dart_doc_markdown_generator/models/cli_config.dart';
 
 /// Entry point for the CLI application.
