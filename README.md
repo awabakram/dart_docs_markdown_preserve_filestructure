@@ -105,7 +105,7 @@ To generate Markdown documentation for your project:
 1. Run the CLI tool with the required arguments:
 
 ```bash
-dart run dart_doc_markdown_generator <project_directory> <output_directory>
+dart pub global run dart_doc_markdown_generator <project_directory> <output_directory>
 ```
 
 - **`<project_directory>`**: The root directory of your Dart/Flutter project.
@@ -114,7 +114,7 @@ dart run dart_doc_markdown_generator <project_directory> <output_directory>
 Example:
 
 ```bash
-dart run dart_docs_markdown ./my_flutter_project ./docs
+dart pub global run dart_doc_markdown_generator ./my_flutter_project ./docs
 ```
 
 This command scans the `my_flutter_project` directory and generates Markdown documentation in the
