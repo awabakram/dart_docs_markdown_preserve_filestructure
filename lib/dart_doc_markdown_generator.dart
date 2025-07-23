@@ -57,7 +57,6 @@ void runDocumentationGeneration(CLIConfig config) {
   final MarkdownGenerator markdownGenerator = MarkdownGenerator();
   for (final DartFileData fileData in parsedFiles) {
     try {
-      // markdownGenerator.generateMarkdown(fileData, config.outputDirectory);
       final String relativePath = 
         fileData.filePath.replaceFirst('${config.projectDirectory}${Platform.pathSeparator}', '');
 
