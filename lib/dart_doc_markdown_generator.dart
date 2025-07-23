@@ -8,15 +8,17 @@ import 'package:dart_doc_markdown_generator/src/models/class_data.dart';
 import 'package:dart_doc_markdown_generator/src/models/dart_file_data.dart';
 import 'package:dart_doc_markdown_generator/src/models/method_data.dart';
 import 'package:dart_doc_markdown_generator/src/models/parameter_data.dart';
+import 'package:path/path.dart' as path;
+
 
 /// Entry point for the CLI application.
 ///
 /// The purpose of this Dart CLI tool is to automate the process of generating documentation for a Dart/Flutter project.
 /// This function wraps this process and, at a high leve, performs the following steps:
 ///
-/// 	1.	**Traverse**: Scan the project directory for .dart files.
-/// 	2.	**Parse**: Extract documentation-relevant data using Dart’s analyzer.
-/// 	3.	**Generate**: Format the extracted data into Markdown files.
+///   1.  **Traverse**: Scan the project directory for .dart files.
+///   2.  **Parse**: Extract documentation-relevant data using Dart’s analyzer.
+///   3.  **Generate**: Format the extracted data into Markdown files.
 void runDocumentationGeneration(CLIConfig config) {
   // Step 1: Traverse the directory to get all Dart files.
   final DirectoryTraversal traversal = DirectoryTraversal(
@@ -55,7 +57,18 @@ void runDocumentationGeneration(CLIConfig config) {
   final MarkdownGenerator markdownGenerator = MarkdownGenerator();
   for (final DartFileData fileData in parsedFiles) {
     try {
-      markdownGenerator.generateMarkdown(fileData, config.outputDirectory);
+      // markdownGenerator.generateMarkdown(fileData, config.outputDirectory);
+      final String relativePath = 
+        fileData.filePath.replaceFirst('${config.projectDirectory}${Platform.pathSeparator}', '');
+
+      final String markdownOutputPath = 
+          path.join(config.outputDirectory, relativePath).replaceAll('.dart', '.md');
+
+      // Create parent directories if needed
+      File(markdownOutputPath).parent.createSync(recursive: true);
+
+      // Generate the markdown
+      markdownGenerator.generateMarkdown(fileData, markdownOutputPath);
 
       // Log generated Markdown file name if verbose mode is enabled.
       _printMarkdownFileName(
